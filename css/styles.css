@@ -1,0 +1,275 @@
+:root {
+  --navy: #10233f;
+  --navy-light: #18365f;
+  --gold: #c9a646;
+  --cream: #f7f3ea;
+  --white: #ffffff;
+  --text: #263238;
+  --muted: #607080;
+  --border: #ddd6c7;
+  --shadow: 0 16px 40px rgba(16, 35, 63, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--navy);
+}
+
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(16, 35, 63, 0.84), rgba(16, 35, 63, 0.84)),
+    radial-gradient(circle at top left, var(--navy-light), var(--navy));
+  color: var(--white);
+  padding: 7rem 0;
+}
+
+.hero-content {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  margin-top: 0;
+  color: var(--navy);
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 660px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.85rem 1.3rem;
+}
+
+.button.primary {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: var(--white);
+}
+
+.section {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2,
+.split-section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.card,
+.feature-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card h3,
+.feature-item h3 {
+  margin-bottom: 0.75rem;
+}
+
+.card p,
+.feature-item p,
+.section-heading p {
+  color: var(--muted);
+}
+
+.card a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration-color: var(--gold);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.feature-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.site-footer {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 1rem 4%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .card-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    width: 94%;
+  }
+
+  .section {
+    width: 94%;
+    padding: 3.5rem 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    text-align: center;
+  }
+}
