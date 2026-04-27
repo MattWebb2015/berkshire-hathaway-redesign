@@ -273,3 +273,46 @@ h3 {
     text-align: center;
   }
 }
+.page-hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 5rem 0;
+}
+
+.page-hero > div {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.page-hero h1 {
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.page-hero p {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.1rem;
+}
+
+.nav-links a.active {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 0.35rem;
+}
+
+.placeholder-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 760px;
+}
+
+.placeholder-card p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
