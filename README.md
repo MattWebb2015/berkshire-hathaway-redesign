@@ -10,3 +10,7 @@ This project redesigns the Berkshire Hathaway website with improved navigation, 
 - News
 - Companies
 - Governance
+
+## Project Scope
+
+This project is a static redesign prototype for an Intro to Web Development final project. It focuses on improving the layout, navigation, readability, organization, and responsive design of the original Berkshire Hathaway website using representative content.
