@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reports | Berkshire Hathaway Redesign</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .report-form {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .btn-view {
+      padding: 8px 16px;
+      background-color: #003366; 
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-view:hover {
+      background-color: #00509e;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -31,24 +50,119 @@
         <p class="eyebrow">Content Section</p>
         <h1>Reports</h1>
         <p>
-          This page will organize annual reports, shareholder letters, and other
-          investor documents into a clearer structure.
+          Select a year and a specific document to view our official investor filings.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="placeholder-card">
-        <h2>Team member construction zone</h2>
-        <p>
-          This page has the nav, layout, and styling ready. It is now waiting
-          for its assigned developer to replace this placeholder with real
-          content, cards, filters, or whatever brilliance they bring to the table.
-        </p>
-        <a class="button primary" href="index.html">Return Home</a>
+      <div class="report-card">
+        <h2>2025 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2025">Select Report:</label>
+          <select id="reports-2025" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr25.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr25.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr25.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2025ar/2025ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2025ar/202510-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
       </div>
     </section>
-  </main>
+
+    <section class="section">
+      <div class="report-card">
+        <h2>2024 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2024">Select Report:</label>
+          <select id="reports-2024" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr24.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr24.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr24.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2024ar/2024ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2024ar/202410-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="report-card">
+        <h2>2023 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2024">Select Report:</label>
+          <select id="reports-2024" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr23.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr23.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr23.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2023ar/2023ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2023ar/202310-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="report-card">
+        <h2>2022 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2024">Select Report:</label>
+          <select id="reports-2024" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr22.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr22.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr22.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2022ar/2022ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2022ar/202210-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="report-card">
+        <h2>2021 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2024">Select Report:</label>
+          <select id="reports-2024" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr21.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr21.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr21.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2021ar/2021ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2021ar/202110-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="report-card">
+        <h2>2020 Reports</h2>
+        <form class="report-form" onsubmit="const val = this.reports.value; if(val) window.open(val, '_blank'); return false;">
+          <label for="reports-2024">Select Report:</label>
+          <select id="reports-2024" name="reports" class="report-select">
+            <option value="">-- Choose a report --</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/1stqtr20.pdf">Quarter 1 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/2ndqtr20.pdf">Quarter 2 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/qtrly/3rdqtr20.pdf">Quarter 3 (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2020ar/2020ar.pdf">Annual Report (PDF)</option>
+            <option value="https://www.berkshirehathaway.com/2020ar/202010-k.pdf">SEC Form 10-K (PDF)</option>
+          </select>
+          <button type="submit" class="btn-view">View</button>
+        </form>
+      </div>
+    </section>
+    </main>
 
   <footer class="site-footer">
     <p>
