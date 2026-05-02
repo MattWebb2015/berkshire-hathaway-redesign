@@ -316,3 +316,82 @@ h3 {
   color: var(--muted);
   margin-bottom: 1.5rem;
 }
+
+.placeholder-card p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.report-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 760px;
+}
+
+.report-card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.report-card label {
+  display: block;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.report-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--text);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.report-select:hover,
+.report-select:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.report-content {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(201, 166, 70, 0.08);
+  border-left: 4px solid var(--gold);
+  border-radius: 0.5rem;
+  min-height: 100px;
+  display: none;
+  color: var(--muted);
+  text-align: center;
+}
+
+.report-content.active {
+  background: var(--cream);
+  color: var(--text);
+  display: block;
+  text-align: left;
+}
+
+.report-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--gold);
+  color: var(--navy);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.report-link:hover {
+  background: #b8952f;
+}
