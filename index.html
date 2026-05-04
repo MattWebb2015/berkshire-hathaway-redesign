@@ -53,8 +53,17 @@
         </p>
       </div>
 
+      <div class="search-panel">
+        <label for="siteSearch">Search key sections</label>
+        <input
+          type="search"
+          id="siteSearch"
+          placeholder="Search reports, news, companies, governance..."
+        />
+      </div>
+
       <div class="card-grid">
-        <article class="card">
+        <article class="card searchable-item" data-search="annual reports financial reports shareholder letters investor documents">
           <h3>Annual Reports</h3>
           <p>
             Financial reports and shareholder letters are organized by year with
@@ -63,7 +72,7 @@
           <a href="reports.html">Browse reports</a>
         </article>
 
-        <article class="card">
+        <article class="card searchable-item" data-search="news releases announcements press updates year topic">
           <h3>News Releases</h3>
           <p>
             News items are presented in a cleaner format with room for filtering
@@ -72,7 +81,7 @@
           <a href="news.html">View news</a>
         </article>
 
-        <article class="card">
+        <article class="card searchable-item" data-search="operating companies insurance energy transportation retail consumer brands">
           <h3>Operating Companies</h3>
           <p>
             Berkshire’s companies are grouped into categories instead of being
@@ -81,7 +90,7 @@
           <a href="companies.html">Explore companies</a>
         </article>
 
-        <article class="card">
+        <article class="card searchable-item" data-search="governance documents policies corporate information stock sustainability">
           <h3>Governance</h3>
           <p>
             Governance documents are separated from general links and given
