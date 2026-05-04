@@ -396,3 +396,32 @@ h3 {
 .report-link:hover {
   background: #b8952f;
 }
+
+.search-panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.search-panel label {
+  display: block;
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.search-panel input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  font: inherit;
+}
+
+.search-panel input:focus {
+  outline: 3px solid rgba(201, 166, 70, 0.35);
+  border-color: var(--gold);
+}
