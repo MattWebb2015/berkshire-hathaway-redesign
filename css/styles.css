@@ -310,6 +310,7 @@ h3 {
   box-shadow: var(--shadow);
   padding: 2rem;
   max-width: 760px;
+  margin-bottom: 2rem;
 }
 
 .placeholder-card p {
